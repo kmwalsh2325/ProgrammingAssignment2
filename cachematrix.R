@@ -53,7 +53,7 @@ cacheSolve <- function(x, ...) {
     else {
     # compute the inverse of the matrix
     matrix <- x$get()
-    n <- round(solve(matrix, ...), 3)
+    n <- solve(matrix, ...)
     x$setinverse(n)
     n
 	}
